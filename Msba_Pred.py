@@ -40,7 +40,7 @@ def build_model(input_data):
     prediction = load_model.predict(input_data)
     st.header('**Prediction output**')
     prediction_output = pd.Series(prediction, name='pIC50')
-    molecule_name = pd.Series(load_data[1], name='molecule_name')
+    molecule_name = pd.Series(load_data.iloc[:, 1].values, name='molecule_name')
     df = pd.concat([molecule_name, prediction_output], axis=1)
     st.write(df)
     st.markdown(filedownload(df), unsafe_allow_html=True)
@@ -74,7 +74,7 @@ if st.sidebar.button('Predict'):
     load_data.to_csv('molecule.smi', sep = '\t', header = False, index = False)
 
     st.header('**Original input data**')
-    st.dataframe(load_data)
+    st.write(load_data)
 
     with st.spinner("Calculating descriptors..."):
         desc_calc()
