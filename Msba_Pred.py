@@ -74,7 +74,7 @@ if st.sidebar.button('Predict'):
     load_data.to_csv('molecule.smi', sep = '\t', header = False, index = False)
 
     st.header('**Original input data**')
-    st.write(load_data)
+    st.dataframe(load_data)
 
     with st.spinner("Calculating descriptors..."):
         desc_calc()
