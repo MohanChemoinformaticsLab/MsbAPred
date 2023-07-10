@@ -3,4 +3,3 @@ pandas
 Pillow
 scikit-learn
 base58
-subprocess
