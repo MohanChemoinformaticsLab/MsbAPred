@@ -10,7 +10,7 @@ import pickle
 # Create title and subtitle
 html_temp = """
 		<div style="background-color:teal">
-		<h1 style="font-family:arial;color:white;text-align:center;">AMRITA-MsbA-Pred</h1>
+		<h1 style="font-family:arial;color:white;text-align:center;">MsbA-Pred</h1>
 		<h4 style="font-family:arial;color:white;text-align:center;">Artificial Intelligence Based Bioactivity Prediction Web-App</h4>       
 		</div>
 		<br>
