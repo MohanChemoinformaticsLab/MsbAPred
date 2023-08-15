@@ -58,7 +58,7 @@ This app allows you to predict the bioactivity towards inhibiting the `MsbA - AT
 
 **Credits**
 - App built in `Python` + `Streamlit` by [Anupama Binoy, Dr. C. Gopi Mohan, Ratul Bhowmik]
-- Author affiliations [Computational Biology Lab, Amrita School of Nanosciences and Molecular Medicine, Amrita Vishwa Vidyapeetham, Kochi]
+- Author affiliations 'Computational Biology Lab, Amrita School of Nanosciences and Molecular Medicine, Amrita Vishwa Vidyapeetham, Kochi'
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 ---
 """)
