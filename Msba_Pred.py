@@ -14,7 +14,7 @@ st.image(another_image, use_column_width=True)
 # Create title and subtitle
 html_temp = """
 		<div style="background-color:teal">
-		<h1 style="font-family:arial;color:white;text-align:center;">MsbA-Pred</h1>
+		<h2 style="font-family:arial;color:white;text-align:center;">MsbA-Pred</h1>
 		<h4 style="font-family:arial;color:white;text-align:center;">Artificial Intelligence Based Bioactivity Prediction Web-App</h4>       
 		</div>
 		<br>
@@ -62,7 +62,7 @@ This app allows you to predict the bioactivity towards inhibiting the `MsbA - AT
 
 **Credits**
 - App built in `Python` + `Streamlit` by [Anupama Binoy, Dr. C. Gopi Mohan, Ratul Bhowmik]
-- Author affiliations [Computational Biology Lab, Amrita School of Nanosciences and Molecular Medicine, Amrita Vishwa Vidyapeetham, Kochi]
+- Author affiliations [Bioinformatics and Computational Biology Lab, Amrita School of Nanosciences and Molecular Medicine, Amrita Vishwa Vidyapeetham, Kochi]
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 
 - **To be a registered user (free of charge) of this site for academic/commercial purposes, kindly download from here (http://surl.li/kcyed) and sign a one-time License Agreement Form and send it to cgmohan@acnsmm.amrita.edu
