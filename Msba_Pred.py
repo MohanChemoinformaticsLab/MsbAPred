@@ -7,6 +7,10 @@ import base64
 import pickle
 
 
+# Add another image logo
+another_image = Image.open('AMRITA.png')
+st.image(another_image, use_column_width=True)
+
 # Create title and subtitle
 html_temp = """
 		<div style="background-color:teal">
