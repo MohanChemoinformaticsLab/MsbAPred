@@ -61,7 +61,7 @@ This app allows you to predict the bioactivity towards inhibiting the `MsbA - AT
 - Author affiliations [Computational Biology Lab, Amrita School of Nanosciences and Molecular Medicine, Amrita Vishwa Vidyapeetham, Kochi]
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 
-- **To be a registered user (free of charge) of this site for academic/commercial purposes, kindly download (http://surl.li/kckeh) and sign a one-time License Agreement Form and send it to cgmohan@acnsmm.amrita.edu
+- **To be a registered user (free of charge) of this site for academic/commercial purposes, kindly download from here (http://surl.li/kcyed) and sign a one-time License Agreement Form and send it to cgmohan@acnsmm.amrita.edu
 ---
 """)
 
