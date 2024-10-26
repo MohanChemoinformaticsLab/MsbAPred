@@ -48,7 +48,7 @@ def main_page():
 
     # Left column: Sidebar for file upload
     with col1:
-        st.header('1. Upload your data')
+        st.header('Upload data')
         uploaded_file = st.file_uploader("Upload your input file as smile notation", type=['txt'])
         st.markdown("""[Example input file](https://raw.githubusercontent.com/MohanChemoinformaticsLab/MsbAPred/main/Sample_Smiles_File.txt)""")
 
@@ -125,7 +125,7 @@ def build_model(input_data):
     st.header('**Prediction output**')
 
     # Create a DataFrame for predictions
-    prediction_output = pd.Series(prediction, name='pIC50')
+    prediction_output = pd.Series(prediction, name='pIC50 (Molar)')
     
     # Get the molecule names without extra indices
     molecule_name = st.session_state.load_data['Identity'].reset_index(drop=True)  # Reset index
@@ -133,7 +133,7 @@ def build_model(input_data):
     # Create a DataFrame combining molecule names and predictions
     df = pd.DataFrame({
         'molecule_name': molecule_name,
-        'pIC50': prediction_output.reset_index(drop=True)  # Reset index for predictions as well
+        'pIC50 (Molar)': prediction_output.reset_index(drop=True)  # Reset index for predictions as well
     })
     
     # Display the DataFrame in a table format
@@ -147,6 +147,13 @@ def build_model(input_data):
 
 # Function to display the results page
 def results_page():
+
+
+    # Go Back button to return to the main page at the top
+    if st.button('Go Back'):
+        st.session_state['show_results'] = False  # Set to False to show main page
+        return  # Exit the function to prevent further processing
+    # Function to display the results page
     load_data = st.session_state.load_data
 
     st.header('**Input data**')
